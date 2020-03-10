@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url('imgs/drum-wallpaper.jpg') no-repeat;
+  background-size: cover;
+  font-family: 'Roboto', sans-serif;
+}
+
+.keys {
+  display: flex;
+  flex: 1;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000ab;
+}
+
+.key {
+  border: 1px solid #693f0f9c;
+  width: 75px;
+  height: 75px;
+  background-color: #97662d62;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 8px;
+  transition: all 0.07s;
+}
+
+.playing {
+  transform: scale(1.15);
+  border-color: #e9d1c5;
+  box-shadow: 0 0 5px #e9d1c5;
+}
+
+kbd {
+  font-size: 15pt;
+  font-weight: bold;
+  color: rgb(201, 200, 253);
+  margin-bottom: 2px;
+}
+
+span {
+  color: #e2cc82;
+  text-transform: uppercase;
+  font-size: 8pt;
+}
