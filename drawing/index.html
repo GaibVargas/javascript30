@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Draw!</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+
+    :root {
+      --color: #bada55;
+    }
+
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      overflow: hidden;
+    }
+
+    h1{
+      position: absolute;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      user-select: none;
+      color: var(--color);
+      font-family: 'Pacifico', cursive;
+      font-size: 45px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Let's draw</h1>
+
+  <canvas id="draw" width="800" height="800"></canvas>
+
+  <script src="script.js"></script>
+</body>
+</html>
