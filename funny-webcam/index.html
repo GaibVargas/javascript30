@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fun with webcam</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="photobooth">
+    <div class="controls">
+      <button onClick="takePhoto()">Take Photo</button>
+      <div class="rgb">
+        <button class="red">Red Effect</button>
+        <button class="split">RGB Split</button>
+        <button class="reset">Reset</button>
+      </div>
+    </div>
+
+    <canvas class="photo"></canvas>
+    <video class="player"></video>
+    <div class="strip"></div>
+  </div>
+
+  <audio class="snap" src="https://wesbos.com/demos/photobooth/snap.mp3" hidden></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
