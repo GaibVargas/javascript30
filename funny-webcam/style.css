@@ -13,9 +13,7 @@ html {
 
 .photobooth {
   background: white;
-  max-width: 150rem;
-  margin: 2rem auto;
-  border-radius: 2px;
+  max-width: 100%;
 }
 
 /*clearfix*/
@@ -25,27 +23,45 @@ html {
   clear: both;
 }
 
+.controls {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+}
+
+.controls button {
+  background-color: #6e0a8d;
+  box-shadow: 2px 2px 0 #31023f;
+  color: #e1e1e1;
+  font-size: 15px;
+  padding: 8px 15px;
+  margin: 5px;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+}
+
 .photo {
   width: 100%;
   float: left;
 }
 
 .player {
-  position: absolute;
-  top: 20px;
-  right: 20px;
+  position: fixed;
+  top: 0px;
+  right: 0px;
   width:200px;
 }
 
 .strip {
-  padding: 2rem;
+  padding: 1.5rem;
 }
 
 .strip img {
   width: 100px;
   overflow-x: scroll;
   padding: 0.8rem 0.8rem 2.5rem 0.8rem;
-  box-shadow: 0 0 3px rgba(0,0,0,0.2);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.486);
   background: white;
 }
 
